@@ -4,3 +4,9 @@
 [submodule "SLIP"]
 	path = pixray/SLIP
 	url = https://github.com/facebookresearch/SLIP
+[submodule "pixray_module/SLIP"]
+	path = pixray_module/SLIP
+	url = https://github.com/facebookresearch/SLIP.git
+[submodule "pixray_module/v-diffusion-pytorch"]
+	path = pixray_module/v-diffusion-pytorch
+	url = https://github.com/pixray/v-diffusion-pytorch.git

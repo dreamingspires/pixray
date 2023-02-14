@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "pixray"
+name = "pixray-module"
 version = "0.1.0"
 description = ""
 authors = ["mark-todd <markpeter.todd@hotmail.co.uk>"]
@@ -39,8 +39,15 @@ aphantasia = {git = "https://github.com/pixray/aphantasia"}
 clip = {git = "https://github.com/openai/CLIP"}
 taming-transformers = {git = "https://github.com/bfirsh/taming-transformers"}
 perlin-numpy = {git = "https://github.com/pvigier/perlin-numpy.git"}
+pytest = "^7.2.1"
+pytorch-lightning = "^1.9.1"
+basicsr = "^1.4.2"
 
 
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
+
+[tool.pyright]
+venvPath="./"
+venv=".venv"
