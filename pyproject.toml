@@ -6,11 +6,10 @@ authors = ["mark-todd <markpeter.todd@hotmail.co.uk>"]
 readme = "README.md"
 
 [tool.poetry.dependencies]
-python = "^3.10"
+python = "^3.9"
 torch = "^1.13.1"
 torchvision = "^0.14.1"
 torchtext = "^0.14.1"
-numpy = "^1.24.2"
 tqdm = "^4.64.1"
 matplotlib = "^3.7.0"
 braceexpand = "^0.1.7"
@@ -39,6 +38,7 @@ pytorch-wavelets = {git = "https://github.com/fbcotter/pytorch_wavelets"}
 aphantasia = {git = "https://github.com/pixray/aphantasia"}
 clip = {git = "https://github.com/openai/CLIP"}
 taming-transformers = {git = "https://github.com/bfirsh/taming-transformers"}
+perlin-numpy = {git = "https://github.com/pvigier/perlin-numpy.git"}
 
 
 [build-system]
