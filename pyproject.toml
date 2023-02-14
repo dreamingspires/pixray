@@ -17,7 +17,6 @@ colorthief = "^0.2.1"
 einops = "^0.6.0"
 imageio = "^2.25.1"
 ipython = "^8.10.0"
-kornia = "^0.6.9"
 omegaconf = "^2.3.0"
 pillow = "^9.4.0"
 pyyaml = "^6.0"
@@ -42,6 +41,8 @@ perlin-numpy = {git = "https://github.com/pvigier/perlin-numpy.git"}
 pytest = "^7.2.1"
 pytorch-lightning = "^1.9.1"
 basicsr = "^1.4.2"
+ftfy = "^6.1.1"
+kornia = "0.6.2"
 
 
 [build-system]

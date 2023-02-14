@@ -435,13 +435,6 @@ python-versions = "*"
 files = []
 develop = false
 
-[package.dependencies]
-ftfy = "*"
-regex = "*"
-torch = "*"
-torchvision = "*"
-tqdm = "*"
-
 [package.extras]
 dev = ["pytest"]
 
@@ -1404,24 +1397,24 @@ files = [
 
 [[package]]
 name = "kornia"
-version = "0.6.9"
+version = "0.6.2"
 description = "Open Source Differentiable Computer Vision Library for PyTorch"
 category = "main"
 optional = false
-python-versions = ">=3.7"
+python-versions = ">=3.6"
 files = [
-    {file = "kornia-0.6.9-py2.py3-none-any.whl", hash = "sha256:e60c64c0ae8073ac5cb767a497701a0a8c9fbe44b1da3072ea1cee41fe5e21b1"},
-    {file = "kornia-0.6.9.tar.gz", hash = "sha256:b756bba0db8d47046417fa72271b2d648c570ec6f1d61e1805e6a36911f63bb9"},
+    {file = "kornia-0.6.2-py2.py3-none-any.whl", hash = "sha256:5269279f6777aad92bd3926b333e5e8f6b7aee856eb95b6ec841364b673ae370"},
+    {file = "kornia-0.6.2.tar.gz", hash = "sha256:eea722b3ff2f227a9ef8088cdab480cd40dd91d9138649bfd92cfa668204eea9"},
 ]
 
 [package.dependencies]
 packaging = "*"
-torch = ">=1.9.1"
+torch = ">=1.8.1"
 
 [package.extras]
-dev = ["isort", "kornia-rs (==0.0.5)", "mypy[reports]", "numpy", "opencv-python", "pre-commit (>=2.0)", "pydocstyle", "pytest (==7.2.0)", "pytest-cov (==4.0.0)", "scipy"]
-docs = ["PyYAML (>=5.1,<6.1.0)", "furo", "matplotlib", "opencv-python", "sphinx (>=4.0)", "sphinx-autodoc-defaultargs", "sphinx-autodoc-typehints (>=1.0)", "sphinx-copybutton (>=0.3)", "sphinx-design", "sphinx-rtd-theme (>0.5)", "sphinxcontrib-bibtex", "sphinxcontrib-gtagjs", "sphinxcontrib-youtube", "torch", "torchvision"]
-x = ["accelerate (==0.15.0)"]
+all = ["accelerate (==0.5.1)", "autopep8", "dataclasses", "flake8 (==3.9.2)", "isort", "numpy", "pre-commit (>=2.0)", "pydocstyle", "pytest (==6.2.5)", "pytest-cov (==3.0.0)", "pytest-flake8 (==1.0.7)", "pytest-mypy (==0.8.1)", "pytest-xdist (==2.4.0)", "scipy", "yapf"]
+dev = ["autopep8", "flake8 (==3.9.2)", "isort", "numpy", "pre-commit (>=2.0)", "pydocstyle", "pytest (==6.2.5)", "pytest-cov (==3.0.0)", "pytest-flake8 (==1.0.7)", "pytest-mypy (==0.8.1)", "pytest-xdist (==2.4.0)", "scipy", "yapf"]
+x = ["accelerate (==0.5.1)", "dataclasses"]
 
 [[package]]
 name = "lightning-utilities"
@@ -3098,7 +3091,7 @@ files = [
 [[package]]
 name = "taming-transformers"
 version = "0.0.1"
-description = "Taming Transformers for High-Resolution Image Synthesis"
+description = ""
 category = "main"
 optional = false
 python-versions = "*"
@@ -3678,14 +3671,14 @@ test = ["websockets"]
 
 [[package]]
 name = "werkzeug"
-version = "2.2.2"
+version = "2.2.3"
 description = "The comprehensive WSGI web application library."
 category = "main"
 optional = false
 python-versions = ">=3.7"
 files = [
-    {file = "Werkzeug-2.2.2-py3-none-any.whl", hash = "sha256:f979ab81f58d7318e064e99c4506445d60135ac5cd2e177a2de0089bfd4c9bd5"},
-    {file = "Werkzeug-2.2.2.tar.gz", hash = "sha256:7ea2d48322cc7c0f8b3a215ed73eabd7b5d75d0b50e31ab006286ccff9e00b8f"},
+    {file = "Werkzeug-2.2.3-py3-none-any.whl", hash = "sha256:56433961bc1f12533306c624f3be5e744389ac61d722175d543e1751285da612"},
+    {file = "Werkzeug-2.2.3.tar.gz", hash = "sha256:2e1ccc9417d4da358b9de6f174e3ac094391ea1d4fbef2d667865d819dfd0afe"},
 ]
 
 [package.dependencies]
@@ -3828,4 +3821,4 @@ testing = ["flake8 (<5)", "func-timeout", "jaraco.functools", "jaraco.itertools"
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.9"
-content-hash = "729af4995fc735aa13bfb05842087029d50d22c2cb7e59783147185c6dc01915"
+content-hash = "a70761ac628bf8f82af54a89242121a11dae44515eef695cb44f7cfc3ffd723f"

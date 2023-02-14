@@ -897,7 +897,7 @@ def do_init(args):
         else:
             infile = f"vectors/{f1}.json"
             if not os.path.exists(infile):
-                infile = f"pixray/vectors/{f1}.json"
+                infile = f"pixray_module/vectors/{f1}.json"
         if infile:
             with open(infile) as f_in:
                 vect_table = json.load(f_in)
