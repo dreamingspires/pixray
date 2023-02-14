@@ -1,0 +1,46 @@
+[tool.poetry]
+name = "pixray"
+version = "0.1.0"
+description = ""
+authors = ["mark-todd <markpeter.todd@hotmail.co.uk>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+torch = "^1.13.1"
+torchvision = "^0.14.1"
+torchtext = "^0.14.1"
+numpy = "^1.24.2"
+tqdm = "^4.64.1"
+matplotlib = "^3.7.0"
+braceexpand = "^0.1.7"
+colorthief = "^0.2.1"
+einops = "^0.6.0"
+imageio = "^2.25.1"
+ipython = "^8.10.0"
+kornia = "^0.6.9"
+omegaconf = "^2.3.0"
+pillow = "^9.4.0"
+pyyaml = "^6.0"
+scikit-learn = "^1.2.1"
+scikit-image = "^0.19.3"
+torch-optimizer = "^0.3.0"
+torch-tools = "^0.1.5"
+cmake = "^3.25.2"
+cssutils = "^2.6.0"
+svgpathtools = "^1.6.0"
+lpips = "^0.1.4"
+sentence-transformers = "^2.2.2"
+opencv-python = "^4.7.0.68"
+pywavelets = "^1.4.1"
+timm = "^0.6.12"
+resmem = "^1.1.6"
+pytorch-wavelets = {git = "https://github.com/fbcotter/pytorch_wavelets"}
+aphantasia = {git = "https://github.com/pixray/aphantasia"}
+clip = {git = "https://github.com/openai/CLIP"}
+taming-transformers = {git = "https://github.com/bfirsh/taming-transformers"}
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
