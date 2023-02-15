@@ -81,7 +81,7 @@ class VdiffDrawer(DrawingInterface):
 
     def load_model(self, settings, device):
         model = get_model(self.vdiff_model)()
-        checkpoint = f'models/{self.vdiff_model}.pth'
+        checkpoint = str(Path(__file__).parent.parent/ 'models'/ f'{self.vdiff_model}.pth')
         
         if not (os.path.exists(checkpoint) and os.path.isfile(checkpoint)):
             wget_file(model_urls[self.vdiff_model],checkpoint)

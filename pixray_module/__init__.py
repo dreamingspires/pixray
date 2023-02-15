@@ -1,7 +1,7 @@
 # Fix sys path thing
 import sys
-sys.path.insert(0, 'pixray_module')
-
+from pathlib import Path
+sys.path.insert(0, str(Path(__file__).parent.absolute()))
 
 from .pixray import run
 
