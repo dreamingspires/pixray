@@ -7,9 +7,6 @@ readme = "README.md"
 
 [tool.poetry.dependencies]
 python = "^3.9"
-torch = "^1.13.1"
-torchvision = "^0.14.1"
-torchtext = "^0.14.1"
 tqdm = "^4.64.1"
 matplotlib = "^3.7.0"
 braceexpand = "^0.1.7"
@@ -22,7 +19,6 @@ pillow = "^9.4.0"
 pyyaml = "^6.0"
 scikit-learn = "^1.2.1"
 scikit-image = "^0.19.3"
-torch-optimizer = "^0.3.0"
 torch-tools = "^0.1.5"
 cmake = "^3.25.2"
 cssutils = "^2.6.0"
@@ -43,7 +39,7 @@ pytorch-lightning = "^1.9.1"
 basicsr = "^1.4.2"
 ftfy = "^6.1.1"
 kornia = "0.6.2"
-
+torch-optimizer = "^0.3.0"
 
 [build-system]
 requires = ["poetry-core"]

@@ -2364,14 +2364,14 @@ six = ">=1.5"
 
 [[package]]
 name = "pytorch-lightning"
-version = "1.9.1"
+version = "1.9.2"
 description = "PyTorch Lightning is the lightweight PyTorch wrapper for ML researchers. Scale your models. Write less boilerplate."
 category = "main"
 optional = false
 python-versions = ">=3.7"
 files = [
-    {file = "pytorch-lightning-1.9.1.tar.gz", hash = "sha256:45b1031f1bdf68d9350fa42e5ec01ff8492d5badda9685a2ae48e5fd8598510a"},
-    {file = "pytorch_lightning-1.9.1-py3-none-any.whl", hash = "sha256:c143ee0a7e4c5779b54aa1bf1ae5faa19ed3e5546e31dad4a0298db6b115cc21"},
+    {file = "pytorch-lightning-1.9.2.tar.gz", hash = "sha256:e60303e258457ccf7ec37c46a616892691fe3fbb23ab12f5c02b8018f03bf223"},
+    {file = "pytorch_lightning-1.9.2-py3-none-any.whl", hash = "sha256:a92c4053c4a57cc79778e9317b5aac57b0594b0f1718909730ab8a5b529639dc"},
 ]
 
 [package.dependencies]
@@ -2386,15 +2386,16 @@ tqdm = ">=4.57.0"
 typing-extensions = ">=4.0.0"
 
 [package.extras]
-all = ["deepspeed (>=0.6.0)", "fairscale (>=0.4.5)", "gym[classic-control] (>=0.17.0)", "hivemind (==1.1.5)", "horovod (>=0.21.2,!=0.24.0)", "hydra-core (>=1.0.5)", "ipython[all] (<8.7.1)", "jsonargparse[signatures] (>=4.18.0)", "matplotlib (>3.1)", "omegaconf (>=2.0.5)", "rich (>=10.14.0,!=10.15.0.a)", "tensorboardX (>=2.2)", "torchvision (>=0.11.1)"]
+all = ["colossalai (>=0.2.0)", "deepspeed (>=0.6.0)", "fairscale (>=0.4.5)", "gym[classic-control] (>=0.17.0)", "hivemind (==1.1.5)", "horovod (>=0.21.2,!=0.24.0)", "hydra-core (>=1.0.5)", "ipython[all] (<8.7.1)", "jsonargparse[signatures] (>=4.18.0)", "matplotlib (>3.1)", "omegaconf (>=2.0.5)", "rich (>=10.14.0,!=10.15.0.a)", "tensorboardX (>=2.2)", "torchvision (>=0.11.1)"]
+colossalai = ["colossalai (>=0.2.0)"]
 deepspeed = ["deepspeed (>=0.6.0)"]
-dev = ["cloudpickle (>=1.3)", "codecov (==2.1.12)", "coverage (==6.5.0)", "deepspeed (>=0.6.0)", "fairscale (>=0.4.5)", "fastapi (<0.87.0)", "gym[classic-control] (>=0.17.0)", "hivemind (==1.1.5)", "horovod (>=0.21.2,!=0.24.0)", "hydra-core (>=1.0.5)", "ipython[all] (<8.7.1)", "jsonargparse[signatures] (>=4.18.0)", "matplotlib (>3.1)", "omegaconf (>=2.0.5)", "onnxruntime (<1.14.0)", "pandas (>1.0)", "pre-commit (==2.20.0)", "protobuf (<=3.20.1)", "psutil (<5.9.5)", "pytest (==7.2.0)", "pytest-cov (==4.0.0)", "pytest-forked (==1.4.0)", "pytest-rerunfailures (==10.3)", "rich (>=10.14.0,!=10.15.0.a)", "scikit-learn (>0.22.1)", "tensorboard (>=2.9.1)", "tensorboardX (>=2.2)", "torchvision (>=0.11.1)", "uvicorn (<0.19.1)"]
+dev = ["cloudpickle (>=1.3)", "codecov (==2.1.12)", "colossalai (>=0.2.0)", "coverage (==6.5.0)", "deepspeed (>=0.6.0)", "fairscale (>=0.4.5)", "fastapi (<0.87.0)", "gym[classic-control] (>=0.17.0)", "hivemind (==1.1.5)", "horovod (>=0.21.2,!=0.24.0)", "hydra-core (>=1.0.5)", "ipython[all] (<8.7.1)", "jsonargparse[signatures] (>=4.18.0)", "matplotlib (>3.1)", "omegaconf (>=2.0.5)", "onnxruntime (<1.14.0)", "pandas (>1.0)", "pre-commit (==2.20.0)", "protobuf (<=3.20.1)", "psutil (<5.9.5)", "pytest (==7.2.0)", "pytest-cov (==4.0.0)", "pytest-forked (==1.4.0)", "pytest-rerunfailures (==10.3)", "rich (>=10.14.0,!=10.15.0.a)", "scikit-learn (>0.22.1)", "tensorboard (>=2.9.1)", "tensorboardX (>=2.2)", "torchvision (>=0.11.1)", "uvicorn (<0.19.1)"]
 examples = ["gym[classic-control] (>=0.17.0)", "ipython[all] (<8.7.1)", "torchvision (>=0.11.1)"]
 extra = ["hydra-core (>=1.0.5)", "jsonargparse[signatures] (>=4.18.0)", "matplotlib (>3.1)", "omegaconf (>=2.0.5)", "rich (>=10.14.0,!=10.15.0.a)", "tensorboardX (>=2.2)"]
 fairscale = ["fairscale (>=0.4.5)"]
 hivemind = ["hivemind (==1.1.5)"]
 horovod = ["horovod (>=0.21.2,!=0.24.0)"]
-strategies = ["deepspeed (>=0.6.0)", "fairscale (>=0.4.5)", "hivemind (==1.1.5)", "horovod (>=0.21.2,!=0.24.0)"]
+strategies = ["colossalai (>=0.2.0)", "deepspeed (>=0.6.0)", "fairscale (>=0.4.5)", "hivemind (==1.1.5)", "horovod (>=0.21.2,!=0.24.0)"]
 test = ["cloudpickle (>=1.3)", "codecov (==2.1.12)", "coverage (==6.5.0)", "fastapi (<0.87.0)", "onnxruntime (<1.14.0)", "pandas (>1.0)", "pre-commit (==2.20.0)", "protobuf (<=3.20.1)", "psutil (<5.9.5)", "pytest (==7.2.0)", "pytest-cov (==4.0.0)", "pytest-forked (==1.4.0)", "pytest-rerunfailures (==10.3)", "scikit-learn (>0.22.1)", "tensorboard (>=2.9.1)", "uvicorn (<0.19.1)"]
 
 [[package]]
@@ -2934,14 +2935,14 @@ files = [
 
 [[package]]
 name = "setuptools"
-version = "67.3.1"
+version = "67.3.2"
 description = "Easily download, build, install, upgrade, and uninstall Python packages"
 category = "main"
 optional = false
 python-versions = ">=3.7"
 files = [
-    {file = "setuptools-67.3.1-py3-none-any.whl", hash = "sha256:23c86b4e44432bfd8899384afc08872ec166a24f48a3f99f293b0a557e6a6b5d"},
-    {file = "setuptools-67.3.1.tar.gz", hash = "sha256:daec07fd848d80676694d6bf69c009d28910aeece68a38dbe88b7e1bb6dba12e"},
+    {file = "setuptools-67.3.2-py3-none-any.whl", hash = "sha256:bb6d8e508de562768f2027902929f8523932fcd1fb784e6d573d2cafac995a48"},
+    {file = "setuptools-67.3.2.tar.gz", hash = "sha256:95f00380ef2ffa41d9bba85d95b27689d923c93dfbafed4aecd7cf988a25e012"},
 ]
 
 [package.extras]
@@ -3111,13 +3112,13 @@ resolved_reference = "8ec57d77c125b19f8f6c047496fd0216db3b700f"
 
 [[package]]
 name = "tb-nightly"
-version = "2.13.0a20230213"
+version = "2.13.0a20230215"
 description = "TensorBoard lets you watch Tensors Flow"
 category = "main"
 optional = false
 python-versions = ">=3.8"
 files = [
-    {file = "tb_nightly-2.13.0a20230213-py3-none-any.whl", hash = "sha256:51e0d47a7e9944a2c3532139bf61d9199afc3d0f50e9b94725086a97e703d560"},
+    {file = "tb_nightly-2.13.0a20230215-py3-none-any.whl", hash = "sha256:badc5b0593e5279714d91b83ed73758f71a67461f5dcbdef984e21286b8a5532"},
 ]
 
 [package.dependencies]
@@ -3391,41 +3392,6 @@ test = ["bert-score (==0.3.10)", "check-manifest", "cloudpickle (>=1.3)", "cover
 text = ["nltk (>=3.6)", "regex (>=2021.9.24)", "tqdm (>=4.41.0)"]
 
 [[package]]
-name = "torchtext"
-version = "0.14.1"
-description = "Text utilities and datasets for PyTorch"
-category = "main"
-optional = false
-python-versions = ">=3.7"
-files = [
-    {file = "torchtext-0.14.1-cp310-cp310-macosx_10_9_x86_64.whl", hash = "sha256:506bda24d28cf2447c0d89cb77a914abb3fbad312b58646caa8c918237e58a2f"},
-    {file = "torchtext-0.14.1-cp310-cp310-macosx_12_0_arm64.whl", hash = "sha256:65f3ea8915bf2f3797d604721a01aa9eb787afe0df33fe5acdf8e11c17eb6011"},
-    {file = "torchtext-0.14.1-cp310-cp310-manylinux1_x86_64.whl", hash = "sha256:bfe3e60f56580c0137531e9a0c7166298fc7f100664208a4cad4a354d9736e5f"},
-    {file = "torchtext-0.14.1-cp310-cp310-manylinux2014_aarch64.whl", hash = "sha256:3516a1e49c1ce33e19d35f4a1e7ba9fb89d033b057508fc889b4023b03a58c02"},
-    {file = "torchtext-0.14.1-cp310-cp310-win_amd64.whl", hash = "sha256:52c1aae6626ed626b4bec65cebeb2fdf909395e2664d1ee0d79492eeb3513490"},
-    {file = "torchtext-0.14.1-cp37-cp37m-macosx_10_9_x86_64.whl", hash = "sha256:8c976fd2ab0388e9d3fca797614225faf2fcafff76f671bd27032be3d4b36289"},
-    {file = "torchtext-0.14.1-cp37-cp37m-manylinux1_x86_64.whl", hash = "sha256:86f80a860c7d19e2c78e226334d8efc3b210946c834a8058ccc691b452be0a34"},
-    {file = "torchtext-0.14.1-cp37-cp37m-manylinux2014_aarch64.whl", hash = "sha256:3f04625e0afe7d890c95c2f68e758b6e86a5c7db58dcfd8e208b03ec3dd5f561"},
-    {file = "torchtext-0.14.1-cp37-cp37m-win_amd64.whl", hash = "sha256:15d83cf0bf07cc864e2656ee322b2b51d4a7fe00a94c9fc8f40128b3dd992004"},
-    {file = "torchtext-0.14.1-cp38-cp38-macosx_10_9_x86_64.whl", hash = "sha256:0e5d8c837c408630a31009e4b76748fd381f369331670d638c19fbb3695fd997"},
-    {file = "torchtext-0.14.1-cp38-cp38-macosx_12_0_arm64.whl", hash = "sha256:fb5f39656281957b20affe4172cd596ccf7d2a7c9e28677b06231c018fe83a26"},
-    {file = "torchtext-0.14.1-cp38-cp38-manylinux1_x86_64.whl", hash = "sha256:ca60d46e084d431d16473d81a789010aa19d51b7b6ec868b600397409c2d9939"},
-    {file = "torchtext-0.14.1-cp38-cp38-manylinux2014_aarch64.whl", hash = "sha256:2a523bee4c0e6b9e3ea68d206bcae1d7c13504c819f1ae267e6d900bd08a0d5a"},
-    {file = "torchtext-0.14.1-cp38-cp38-win_amd64.whl", hash = "sha256:cb5b3664c24b3b13030b61b739bdbaafde7840091cbd08b89d2f319585e70363"},
-    {file = "torchtext-0.14.1-cp39-cp39-macosx_10_9_x86_64.whl", hash = "sha256:0ebdf3058af4394c2602cc62380e25830fa4de60d1c81ecb96a610a51e9db80d"},
-    {file = "torchtext-0.14.1-cp39-cp39-macosx_12_0_arm64.whl", hash = "sha256:8e6ec13244074c55fa8a762414bed34ba04f4d577a061e4da85fb7a1e063fd56"},
-    {file = "torchtext-0.14.1-cp39-cp39-manylinux1_x86_64.whl", hash = "sha256:93bcd73c9c58353a3caf880a11a7d95b9832a129aaee3bd30ba49e690a278f47"},
-    {file = "torchtext-0.14.1-cp39-cp39-manylinux2014_aarch64.whl", hash = "sha256:e592d9a3288859cb9af3950581c6441dfaf3d248c03e720123a382188857d6be"},
-    {file = "torchtext-0.14.1-cp39-cp39-win_amd64.whl", hash = "sha256:82e5df4a7ad828d3f828b19f563993656ea1b31b4e828a22f1905b1f17faefdd"},
-]
-
-[package.dependencies]
-numpy = "*"
-requests = "*"
-torch = "*"
-tqdm = "*"
-
-[[package]]
 name = "torchvision"
 version = "0.14.1"
 description = "image and video datasets and models for torch deep learning"
@@ -3591,14 +3557,14 @@ vision = ["Pillow"]
 
 [[package]]
 name = "typing-extensions"
-version = "4.4.0"
+version = "4.5.0"
 description = "Backported and Experimental Type Hints for Python 3.7+"
 category = "main"
 optional = false
 python-versions = ">=3.7"
 files = [
-    {file = "typing_extensions-4.4.0-py3-none-any.whl", hash = "sha256:16fa4864408f655d35ec496218b85f79b3437c829e93320c7c9215ccfd92489e"},
-    {file = "typing_extensions-4.4.0.tar.gz", hash = "sha256:1511434bb92bf8dd198c12b1cc812e800d4181cfcb867674e0f8279cc93087aa"},
+    {file = "typing_extensions-4.5.0-py3-none-any.whl", hash = "sha256:fb33085c39dd998ac16d1431ebc293a8b3eedd00fd4a32de0ff79002c19511b4"},
+    {file = "typing_extensions-4.5.0.tar.gz", hash = "sha256:5cb5f4a79139d699607b3ef622a1dedafa84e115ab0024e0d9c044a9479ca7cb"},
 ]
 
 [[package]]
@@ -3821,4 +3787,4 @@ testing = ["flake8 (<5)", "func-timeout", "jaraco.functools", "jaraco.itertools"
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.9"
-content-hash = "a70761ac628bf8f82af54a89242121a11dae44515eef695cb44f7cfc3ffd723f"
+content-hash = "d5c480eb6010f3680bc0e039448b4fbd9f72af1bae6026511d73ab5a88c98670"
