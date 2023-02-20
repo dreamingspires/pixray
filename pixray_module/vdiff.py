@@ -67,7 +67,7 @@ class VdiffDrawer(DrawingInterface):
 
     def __init__(self, settings):
         super(DrawingInterface, self).__init__()
-        os.makedirs("models",exist_ok=True)
+        os.makedirs(str(Path(__file__).parent/ 'models'),exist_ok=True)
         self.vdiff_model = settings.vdiff_model
         self.canvas_width = settings.size[0]
         self.canvas_height = settings.size[1]
@@ -81,8 +81,7 @@ class VdiffDrawer(DrawingInterface):
 
     def load_model(self, settings, device):
         model = get_model(self.vdiff_model)()
-        checkpoint = str(Path(__file__).parent.parent/ 'models'/ f'{self.vdiff_model}.pth')
-        
+        checkpoint = str(Path(__file__).parent/ 'models'/ f'{self.vdiff_model}.pth')
         if not (os.path.exists(checkpoint) and os.path.isfile(checkpoint)):
             wget_file(model_urls[self.vdiff_model],checkpoint)
 

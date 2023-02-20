@@ -11,6 +11,8 @@ import subprocess
 import datetime
 import os
 import requests
+from tqdm import tqdm
+
 try:
     import matplotlib.colors
 except ImportError:
@@ -264,11 +266,19 @@ def wget_file(url, out):
     try:
         print(f"Downloading {out} from {url}, please wait")
         with requests.get(url, stream=True) as r:
+            total = int(r.headers.get('content-length', 0))
             r.raise_for_status()
-            with open(out, 'wb') as f:
-                # download in 1-Megabyte chunks
-                for chunk in r.iter_content(chunk_size=1048576):
-                    f.write(chunk)
+            with open(out, 'wb') as f, tqdm(
+                desc=out,
+                total=total,
+                unit='iB',
+                unit_scale=True,
+                unit_divisor=1024,
+            ) as bar:
+                for data in r.iter_content(chunk_size=1024):
+                    size = f.write(data)
+                    bar.update(size)
+
     except requests.exceptions.HTTPError as e:
         print("A connection error occurred while attempting to download the file:")
         print(e)
@@ -278,6 +288,8 @@ def wget_file(url, out):
     except Exception as e:
         print("An unexpected error occurred while attempting to download the file:")
         print(e)
+    except KeyboardInterrupt:
+        Path(out).unlink()
 
 # filename templates - can fill in placeholders for %DATE%, %SIZE% and %SEQ%
 # TODO: load more of these settings into the template_dict

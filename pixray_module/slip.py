@@ -17,7 +17,7 @@ all_slip_models =  ["SLIP_VITS16", "SLIP_VITB16", "SLIP_VITL16",
 
 
 from util import wget_file
-
+from pathlib import Path
 def normalize(img, input_range = None):
     if input_range is None:
         minv = img.min()
@@ -172,7 +172,8 @@ class SLIP_Base():
 
 def get_clip_perceptor(clip_model_name, device):
     if clip_model_name in clip.available_models():
-        perceptor, preprocess = clip.load(clip_model_name, download_root="models")
+        download_root = str(Path(__file__).parent/ 'models')
+        perceptor, preprocess = clip.load(clip_model_name, download_root=download_root)
         perceptor = perceptor.requires_grad_(False).eval().to(device)
 
         n_params = sum(p.numel() for p in perceptor.parameters())
